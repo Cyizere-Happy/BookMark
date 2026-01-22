@@ -1,4 +1,4 @@
-# compiled output
+# Node & build
 /dist
 /node_modules
 /build
@@ -10,47 +10,44 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 
 # OS
 .DS_Store
 
-# Tests
+# Coverage
 /coverage
 /.nyc_output
 
-# IDEs and editors
+# IDEs
 /.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# dotenv environment variable files
-.env
+# dotenv
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
-# temp directory
+# Temp
 .temp
 .tmp
 
-# Runtime data
+# Runtime
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Prisma
+node_modules/.prisma/
+prisma/dev.db    # ignore if you ever use SQLite locally
+
+# Docker
+/db_data/
+docker-compose.override.yml
+config.bat
